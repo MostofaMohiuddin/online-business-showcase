@@ -1,61 +1,182 @@
-.header {
+.body {
+  position: relative;
+}
+.mynavbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
   transition: 0.6s;
-  padding: 40px 100px;
-  z-index: 1000000;
-  border-bottom-width: 1px;
+  padding: 4vh 8vw;
+  z-index: 1000;
+  border-bottom-width: 0.01em;
   border-bottom-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px #333;
 }
 
-.header .logo {
-  position: relative;
+.mynavbar .logo {
+  position: fixed;
   font-weight: 700;
-  color: #fff;
+  color: #05386b;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 2.5em;
   text-transform: uppercase;
   transition: 0.6s;
   letter-spacing: 2px;
 }
 
-.header ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.mynavbar ul {
+  /* position: relative; */
+  float: right;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
-.header ul li {
-  position: relative;
+.mynavbar ul li {
+  /* position: relative; */
+  display: inline-block;
   list-style: none;
 }
-.header ul li a {
+
+.mynavbar ul li a {
   position: relative;
   color: #fff;
   text-decoration: none;
-  margin: 0px 25px;
+  margin: 0px 15px;
   font-weight: 500;
+  font-size: 16px;
   transition: 0.6s;
+}
+.mynavbar ul li a:hover {
+  color: aqua;
+}
+
+#check {
+  display: none;
 }
 
 .banner {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(bg2.jpg);
+  background: url(../images/hero_2.jpg);
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
   background-size: cover;
+
+  /* background-size: cover;
+  background-position: center; */
+  /* filter: opacity(50%);
+  -webkit-filter: opacity(80%); */
 }
-.header.sticky .logo,
-.header.sticky ul li a {
+
+.mynavbar.sticky .logo,
+.mynavbar.sticky ul li a {
   color: #000;
 }
-.header.sticky {
+.mynavbar.sticky {
   background-color: #fff;
-  padding: 15px 80px;
+  padding: 3vh 7vw;
+}
+.checklabel {
+  display: none;
+}
+i.icon {
+  display: none;
+}
+.burger {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.burger.sticky {
+  color: #000;
+}
+
+/* @media (max-width: 80rem) {
+  .mynavbar {
+    padding: 30px 88px;
+  }
+} */
+
+@media screen and (max-width: 70rem) {
+  .checklabel {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 60%;
+  }
+  #check:checked ~ label .burger {
+    pointer-events: none;
+  }
+  #check:checked ~ label .sidebarclose.window {
+    margin-left: 80vw;
+  }
+
+  .mynavbar ul {
+    /* display: none;
+    position: fixed; */
+    /* display: inline-block; */
+    /* width: 50%;
+    height: 100vh;
+    text-align: center; */
+    /* background-color: royalblue; */
+    position: fixed;
+    width: 40vw;
+    height: 100vh;
+    background: #2c3e50;
+    padding-top: 10vh;
+    top: 0px;
+    left: 160%;
+    z-index: 1111111;
+    text-align: center;
+    transition: all 0.5s;
+    box-shadow: 20px 20px 50px grey;
+  }
+  .mynavbar ul li {
+    display: block;
+    margin: 2vh 0;
+    line-height: 8vh;
+    font-size: 18px;
+  }
+  .mynavbar {
+    padding: 4vh 8vw;
+  }
+  i.icon.big {
+    display: block;
+  }
+  .burger {
+    position: relative;
+    display: block;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  .sidebarclose.window {
+    position: absolute;
+    display: block;
+    /* float: right; */
+    margin-left: 100vw;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+    z-index: 1111111111;
+  }
 }

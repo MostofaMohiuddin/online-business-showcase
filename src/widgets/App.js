@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "./navbar";
+import Header from "./Header";
+import AboutUs from "./AboutUs";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Header />
       </div>
     );
   }
