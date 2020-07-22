@@ -1,29 +1,50 @@
 import React from "react";
-import "../css/navbar.css";
-import "../css/header.css";
+import "../css/aboutus.css";
+import "../css/section.css";
+import sectionimage from "../images/hero_1.jpg";
 
 class AboutUs extends React.Component {
   constructor(props) {
     super(props);
     this.state = { activeClass: "" };
   }
-  componentDidMount() {
-    window.addEventListener("scroll", () => {
-      let activeClass = "sticky";
-      if (window.scrollY === 0) {
-        activeClass = "";
-      }
-      this.setState({ activeClass });
-    });
-  }
+
   render() {
     return (
       <div>
-        <div class="container">
-          <h1 style={{ textAlign: "center", color: "#0074e1" }}>About Us</h1>
-          <div class="row">
-            <div class="col">1 of 2</div>
-            <div class="col">2 of 2</div>
+        <div className="container">
+          <h1 className="section-title">About Us</h1>
+          <div className="row">
+            <div className="col-6">
+              <img src={sectionimage} className="img-fluid aboutus-image" />
+              <div className="bgcircle"></div>
+            </div>
+            <div className="col-6" style={{ paddingLeft: "100px" }}>
+              <h2 className="section-subtitle">
+                Tailored Advice, Competitive Price
+              </h2>
+              <span className="section-paragraph">
+                <div style={{ marginBottom: "2vh" }}>
+                  We are the most respected will writing and probate firms in
+                  the UK covering England and Wales.
+                </div>
+                <ul>
+                  <li>
+                    Decide who looks after your affairs & assets after you die.
+                  </li>
+                  <li>
+                    Save your family the heartache of not knowing your wishes.
+                  </li>
+                  <li>
+                    Save tax and shelter your assets from local authorities.
+                  </li>
+                  <li>
+                    Fixed fees, appointments in your home or at our office, at a
+                    time that suits you.
+                  </li>
+                </ul>
+              </span>
+            </div>
           </div>
         </div>
       </div>

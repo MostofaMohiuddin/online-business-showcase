@@ -69,7 +69,7 @@ class Header extends React.Component {
               Get in Touch
             </a>
           </div>
-          <a href="" className="header-scroll">
+          <a href="#aboutus" className="header-scroll">
             <div className="header-scroll-box">
               <div className="header-scroll-dot"></div>
             </div>
