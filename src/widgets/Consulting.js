@@ -19,7 +19,7 @@ class Consulting extends React.Component {
             <div class="col-md consulting-subsection">
               <h2 className="section-subtitle">Free Consulting</h2>
               <div className="section-paragraph">
-                Call us 24/7 at (888)123-4567 or fill out the form.
+                Call us 24/7 at +44 78 0438 8055 or fill out the form.
               </div>
             </div>
             <div class="col-md">

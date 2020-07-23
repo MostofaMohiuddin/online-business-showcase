@@ -13,15 +13,22 @@ class AboutUs extends React.Component {
   render() {
     return (
       <div>
-        <div data-aos="fade-up" className="container">
-          <h1 className="section-title">About Us</h1>
+        <div className="container">
+          <h1 data-aos="fade-up" className="section-title">
+            About Us
+          </h1>
           <div className="row">
-            <div data-aos="fade-up" className="col-lg-6">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="5000"
+              className="col-lg-6"
+            >
               <img src={sectionimage} className="img-fluid aboutus-image" />
               <div className="bgcircle"></div>
             </div>
             <div
               data-aos="fade-up"
+              data-aos-duration="1000"
               className="col-lg-6"
               style={{ paddingLeft: "100px" }}
             >

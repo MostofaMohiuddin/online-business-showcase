@@ -1,11 +1,11 @@
 .section {
-  margin-top: 10vh;
-  padding-bottom: 20vh;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 .sectiongray {
-  margin-top: 10vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  /* margin-top: 10vh; */
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   border-bottom: 1px solid;
   border-top: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
@@ -28,7 +28,7 @@ h2.section-subtitle {
 .section-paragraph {
   font-size: 16px;
   line-height: 2rem;
-  font-weight: lighter;
+  font-weight: 300;
   margin-bottom: 5.5vh;
 }
 

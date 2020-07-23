@@ -4,6 +4,7 @@ import "../css/navbar.css";
 import "../css/header.css";
 import "../css/section.css";
 import AboutUs from "./AboutUs";
+import Services from "./Services";
 import FAQs from "./FAQs";
 import Consulting from "./Consulting";
 import Footer from "./Footer";
@@ -49,7 +50,12 @@ class Header extends React.Component {
               </div>
             </div>
             <div className="mynavbar-top-button">
-              <a href="#" class="button" role="button" aria-pressed="true">
+              <a
+                href="#Consulting"
+                class="button"
+                role="button"
+                aria-pressed="true"
+              >
                 Free consulting
               </a>
             </div>
@@ -110,6 +116,9 @@ class Header extends React.Component {
         </div>
         <div id="aboutus" className="section">
           <AboutUs />
+        </div>
+        <div id="Consulting" className="section">
+          <Services />
         </div>
         <div id="Consulting" className="sectiongray">
           <Consulting />
