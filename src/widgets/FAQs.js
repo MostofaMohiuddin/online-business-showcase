@@ -1,29 +1,29 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "../css/aboutus.css";
 import "../css/section.css";
 import sectionimage from "../images/hero_1.jpg";
 
 class FAQs extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeClass: "" };
+  componentDidMount() {
+    Aos.init({ duration: 2000 });
   }
-
   render() {
     return (
       <div>
-        <div className="container">
+        <div data-aos="fade-up" className="container">
           <h1 className="section-title">Frequently Ask Questions</h1>
           <div className="row">
             <div className="col-6">
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">What is a Will?</h2>
                 <span className="section-paragraph">
                   A will is a document which contains a person’s intentions on
                   the distribution of his or her assets at death.
                 </span>
               </div>
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">
                   Can my beneficiary witness my Will?
                 </h2>
@@ -34,7 +34,7 @@ class FAQs extends React.Component {
                 </span>
               </div>
 
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">
                   How long will my Will be valid for?
                 </h2>
@@ -44,7 +44,7 @@ class FAQs extends React.Component {
                 </span>
               </div>
 
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">
                   What is the role of my executor and trustee?
                 </h2>
@@ -56,7 +56,7 @@ class FAQs extends React.Component {
             </div>
 
             <div className="col-6">
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">
                   Do I have to list all my assets in my Will??
                 </h2>
@@ -66,7 +66,7 @@ class FAQs extends React.Component {
                   accounts” would be sufficient.
                 </span>
               </div>
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">
                   Can my Will include foreign property?
                 </h2>
@@ -76,7 +76,7 @@ class FAQs extends React.Component {
                   foreign jurisdiction.
                 </span>
               </div>
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">
                   Do I need to appoint a guardian in my Will?
                 </h2>
@@ -85,7 +85,7 @@ class FAQs extends React.Component {
                   if you have children below 18 years.
                 </span>
               </div>
-              <div style={{ marginBottom: "3vh" }}>
+              <div data-aos="fade-up" style={{ marginBottom: "3vh" }}>
                 <h2 className="section-subtitle">Should I rewrite my Will?</h2>
                 <span className="section-paragraph">
                   The decision depends on the change in your circumstances and

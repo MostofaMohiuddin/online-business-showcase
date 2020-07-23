@@ -1,4 +1,6 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "../css/navbar.css";
 import "../css/header.css";
 import "../css/section.css";
@@ -13,6 +15,7 @@ class Header extends React.Component {
     this.state = { activeClass: "" };
   }
   componentDidMount() {
+    Aos.init({ duration: 2000 });
     window.addEventListener("scroll", () => {
       let activeClass = "sticky";
       if (window.scrollY === 0) {
@@ -25,6 +28,33 @@ class Header extends React.Component {
     return (
       <div>
         <div className="banner">
+          <div className="mynavbar-top">
+            <div className="mynavbar-top-primary">
+              <div className="mynavbar-top-primary-item">
+                <i aria-hidden="true" className={`point topbar icon`}></i>20-22
+                Wenlock Road, London, England
+              </div>
+              <div className="mynavbar-top-primary-item">
+                <i
+                  aria-hidden="true"
+                  className={`mobile alternate topbar icon`}
+                ></i>
+                +44 78 0438 8055
+              </div>
+              <div className="mynavbar-top-primary-item">
+                <i
+                  aria-hidden="true"
+                  className={`clock outline topbar icon`}
+                ></i>
+                9AM-11AM
+              </div>
+            </div>
+            <div className="mynavbar-top-button">
+              <a href="#" class="button" role="button" aria-pressed="true">
+                Free consulting
+              </a>
+            </div>
+          </div>
           <div className={`mynavbar ${this.state.activeClass}`}>
             <input type="checkbox" id="check"></input>
             <a href="#" className="logo">
@@ -79,7 +109,7 @@ class Header extends React.Component {
             </div>
           </a>
         </div>
-        <div id="aboutus" className="section">
+        <div data-aos="fade-up" id="aboutus" className="section">
           <AboutUs />
         </div>
         <div id="FAQs" className="sectiongrey">
@@ -92,3 +122,17 @@ class Header extends React.Component {
 }
 
 export default Header;
+{
+  /* <div className="row">
+  <div className="col-sm-3">
+    <i aria-hidden="true" className={`point topbar icon`}></i>20-22 Wenlock
+    Road, London, England
+  </div>
+  <div className="col-sm-2">
+    <i aria-hidden="true" className={`mobile alternate topbar icon`}></i>
+    +44 78 0438 8055
+  </div>
+  <div className="col-3">a</div>
+  <div className="col-3">a</div>
+</div>; */
+}

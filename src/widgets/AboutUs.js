@@ -1,12 +1,13 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "../css/aboutus.css";
 import "../css/section.css";
 import sectionimage from "../images/hero_1.jpg";
 
 class AboutUs extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeClass: "" };
+  componentDidMount() {
+    Aos.init({ duration: 2000 });
   }
 
   render() {
@@ -15,11 +16,20 @@ class AboutUs extends React.Component {
         <div className="container">
           <h1 className="section-title">About Us</h1>
           <div className="row">
-            <div className="col-lg-6">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="col-lg-6"
+            >
               <img src={sectionimage} className="img-fluid aboutus-image" />
               <div className="bgcircle"></div>
             </div>
-            <div className="col-lg-6" style={{ paddingLeft: "100px" }}>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="col-lg-6"
+              style={{ paddingLeft: "100px" }}
+            >
               <h2 className="section-subtitle">
                 Tailored Advice, Competitive Price
               </h2>
