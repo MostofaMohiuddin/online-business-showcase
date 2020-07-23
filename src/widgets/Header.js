@@ -1,7 +1,11 @@
 import React from "react";
 import "../css/navbar.css";
 import "../css/header.css";
+import "../css/section.css";
 import AboutUs from "./AboutUs";
+import FAQs from "./FAQs";
+import Footer from "./Footer";
+import neologo from "../images/Neo-Logo.png";
 
 class Header extends React.Component {
   constructor(props) {
@@ -24,7 +28,7 @@ class Header extends React.Component {
           <div className={`mynavbar ${this.state.activeClass}`}>
             <input type="checkbox" id="check"></input>
             <a href="#" className="logo">
-              Logo
+              <img src={neologo} className="img-fluid" />
             </a>
             <ul>
               <li>
@@ -46,7 +50,7 @@ class Header extends React.Component {
                 <a href="#">Pricing</a>
               </li>
               <li>
-                <a href="#">FAQs</a>
+                <a href="#FAQs">FAQs</a>
               </li>
             </ul>
             <label htmlFor="check" className="checklabel">
@@ -75,9 +79,13 @@ class Header extends React.Component {
             </div>
           </a>
         </div>
-        <div id="aboutus">
+        <div id="aboutus" className="section">
           <AboutUs />
         </div>
+        <div id="FAQs" className="sectiongrey">
+          <FAQs />
+        </div>
+        <Footer />
       </div>
     );
   }

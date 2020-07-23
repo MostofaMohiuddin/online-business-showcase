@@ -1,0 +1,60 @@
+.myfooter {
+  margin-top: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 30vh;
+  background-color: rgb(34, 30, 30);
+
+  color: aliceblue;
+}
+
+.footer-paragraph {
+  line-height: 2vh;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+ul li {
+  list-style: none;
+}
+
+.col-2 ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 3vh;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+
+.col-2 ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-title {
+  padding-bottom: 3vh;
+}
+
+i.icon.large {
+  display: block;
+}
+
+.col-2 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.col-2 a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-border {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  border-top: 1px solid;
+  border-color: rgba(255, 255, 255, 0.246);
+}
+.footer-paragraph-copyright {
+  line-height: 3vh;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}

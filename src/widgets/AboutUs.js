@@ -15,11 +15,11 @@ class AboutUs extends React.Component {
         <div className="container">
           <h1 className="section-title">About Us</h1>
           <div className="row">
-            <div className="col-6">
+            <div className="col-lg-6">
               <img src={sectionimage} className="img-fluid aboutus-image" />
               <div className="bgcircle"></div>
             </div>
-            <div className="col-6" style={{ paddingLeft: "100px" }}>
+            <div className="col-lg-6" style={{ paddingLeft: "100px" }}>
               <h2 className="section-subtitle">
                 Tailored Advice, Competitive Price
               </h2>

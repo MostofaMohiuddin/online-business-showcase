@@ -1,5 +1,17 @@
+.section {
+  margin-top: 10vh;
+  padding-bottom: 20vh;
+}
+.sectiongrey {
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(187, 187, 187, 0.1);
+}
 h1.section-title {
-  margin-top: 8vh;
+  padding-top: 8vh;
   margin-bottom: 8vh;
   font-weight: bold;
   text-align: center;
@@ -8,7 +20,7 @@ h1.section-title {
 }
 
 h2.section-subtitle {
-  margin-bottom: 2.5vh;
+  margin-bottom: 2vh;
   /* font-weight: bold; */
 }
 
