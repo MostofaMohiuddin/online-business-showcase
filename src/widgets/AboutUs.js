@@ -7,26 +7,21 @@ import sectionimage from "../images/hero_1.jpg";
 
 class AboutUs extends React.Component {
   componentDidMount() {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }
 
   render() {
     return (
       <div>
-        <div className="container">
+        <div data-aos="fade-up" className="container">
           <h1 className="section-title">About Us</h1>
           <div className="row">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-lg-6"
-            >
+            <div data-aos="fade-up" className="col-lg-6">
               <img src={sectionimage} className="img-fluid aboutus-image" />
               <div className="bgcircle"></div>
             </div>
             <div
               data-aos="fade-up"
-              data-aos-duration="3000"
               className="col-lg-6"
               style={{ paddingLeft: "100px" }}
             >

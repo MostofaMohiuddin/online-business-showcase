@@ -1,11 +1,11 @@
 import React from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 import "../css/navbar.css";
 import "../css/header.css";
 import "../css/section.css";
 import AboutUs from "./AboutUs";
 import FAQs from "./FAQs";
+import Consulting from "./Consulting";
 import Footer from "./Footer";
 import neologo from "../images/Neo-Logo.png";
 
@@ -15,7 +15,6 @@ class Header extends React.Component {
     this.state = { activeClass: "" };
   }
   componentDidMount() {
-    Aos.init({ duration: 2000 });
     window.addEventListener("scroll", () => {
       let activeClass = "sticky";
       if (window.scrollY === 0) {
@@ -109,10 +108,13 @@ class Header extends React.Component {
             </div>
           </a>
         </div>
-        <div data-aos="fade-up" id="aboutus" className="section">
+        <div id="aboutus" className="section">
           <AboutUs />
         </div>
-        <div id="FAQs" className="sectiongrey">
+        <div id="Consulting" className="sectiongray">
+          <Consulting />
+        </div>
+        <div id="FAQs" className="section">
           <FAQs />
         </div>
         <Footer />

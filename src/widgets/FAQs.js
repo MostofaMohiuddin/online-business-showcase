@@ -7,7 +7,7 @@ import sectionimage from "../images/hero_1.jpg";
 
 class FAQs extends React.Component {
   componentDidMount() {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }
   render() {
     return (
