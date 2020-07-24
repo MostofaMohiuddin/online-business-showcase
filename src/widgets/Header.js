@@ -31,7 +31,7 @@ class Header extends React.Component {
           <div className="mynavbar-top">
             <div className="mynavbar-top-primary">
               <div className="mynavbar-top-primary-item">
-                <i aria-hidden="true" className={`point topbar icon`}></i>20-22
+                <i aria-hidden="true" className={`point topbar icon`}></i> 20-22
                 Wenlock Road, London, England
               </div>
               <div className="mynavbar-top-primary-item">
