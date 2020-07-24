@@ -16,7 +16,7 @@ class Consulting extends React.Component {
       <div>
         <div data-aos="fade-up" className="container">
           <div class="row">
-            <div class="col-md consulting-subsection">
+            <div class="col-5-md consulting-subsection">
               <h2 className="section-subtitle">Free Consulting</h2>
               <div className="section-paragraph">
                 Call us 24/7 at +44 78 0438 8055 or fill out the form.

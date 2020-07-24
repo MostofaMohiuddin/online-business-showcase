@@ -1,4 +1,4 @@
-.col-md.consulting-subsection {
+.col-5-md.consulting-subsection {
   padding-right: 1rem;
   margin-right: 1.5rem;
   border-right-width: 1px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .col-md.consulting-subsection {
+  .col-5-md.consulting-subsection {
     border: none;
   }
 }
