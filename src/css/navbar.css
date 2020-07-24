@@ -8,9 +8,9 @@
   padding-bottom: 0.5rem;
   font-size: 14px;
   color: aliceblue;
-  border-bottom-width: 0.01em;
+  border-bottom-width: 0.1em;
   border-bottom-style: solid;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.287);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +111,7 @@
   transform: translate(-50%, -50%); */
 
   /* need to align-items: center: ; */
-  margin-top: 1rem;
+  margin-top: 0.95rem;
   list-style: none;
 }
 
