@@ -4,8 +4,8 @@
 }
 .sectiongray {
   /* margin-top: 10vh; */
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   border-bottom: 1px solid;
   border-top: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
@@ -22,13 +22,37 @@ h1.section-title {
 
 h2.section-subtitle {
   margin-bottom: 2vh;
-  /* font-weight: bold; */
+  font-weight: 600;
 }
-
+h3.section-subtitle {
+  margin-bottom: 2vh;
+  /* font-weight: 600; */
+}
+h3.section-subtitle-center {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
 .section-paragraph {
   font-size: 16px;
   line-height: 2rem;
   font-weight: 300;
+  margin-bottom: 5.5vh;
+}
+.section-paragraph-big-center {
+  display: block;
+  font-size: 20px;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+.section-emphasize {
+  font-size: 18px;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px rgba(128, 128, 128, 0.5);
+  font-weight: 400;
   margin-bottom: 5.5vh;
 }
 
@@ -36,6 +60,7 @@ h2.section-subtitle {
   list-style-type: none;
   line-height: 2rem;
   letter-spacing: 0.6px;
+  margin-left: 1.3em;
 }
 .section-paragraph ul li {
   margin-bottom: 1vh;
@@ -44,4 +69,12 @@ h2.section-subtitle {
 .section-paragraph ul li:before {
   color: green;
   content: "✓ ";
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+
+i.icon {
+  display: inline;
+  font-size: 16px;
 }

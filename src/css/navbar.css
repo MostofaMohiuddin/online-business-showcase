@@ -122,7 +122,7 @@
   /* margin: 0px 15px; */
 
   margin-left: 30px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
 
   transition: 0.6s;
@@ -171,7 +171,7 @@
 }
 
 .mynavbar.sticky ul li a:hover {
-  color: #c3073f;
+  color: #0074e1;
 }
 .checklabel {
   display: none;
@@ -207,7 +207,7 @@ i.icon {
     pointer-events: none;
   }
   #check:checked ~ label .sidebarclose.window {
-    margin-left: 80vw;
+    margin-left: 85vw;
   }
 
   .mynavbar ul {

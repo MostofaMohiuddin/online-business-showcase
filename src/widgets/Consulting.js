@@ -16,13 +16,14 @@ class Consulting extends React.Component {
       <div>
         <div data-aos="fade-up" className="container">
           <div class="row">
-            <div class="col-5-md consulting-subsection">
+            <div class="col-md-5 consulting-subsection">
               <h2 className="section-subtitle">Free Consulting</h2>
-              <div className="section-paragraph">
-                Call us 24/7 at +44 78 0438 8055 or fill out the form.
+              <div className="section-emphasize">
+                Call us for an appointment at +44 78 0438 8055 or fill out the
+                form
               </div>
             </div>
-            <div class="col-md">
+            <div class="col-md-7">
               <form>
                 <div className="row form-group">
                   <div className="col">
@@ -42,7 +43,7 @@ class Consulting extends React.Component {
                       class="form-control"
                       value={this.state.email}
                       onChange={(e) => this.setState({ email: e.target.value })}
-                      placeholder="Enter email"
+                      placeholder="Email"
                     ></input>
                   </div>
                   <div className="col-6">
@@ -59,15 +60,14 @@ class Consulting extends React.Component {
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
-                    rows="3"
+                    rows="5"
                     placeholder="Your Message"
                   ></textarea>
                 </div>
               </form>
               <button
                 type="button"
-                class="btn btn-outline-primary"
-                style={{ float: "right" }}
+                class="btn btn-outline-primary appointment-btn"
               >
                 Appointment
               </button>

@@ -32,9 +32,9 @@ class AboutUs extends React.Component {
               className="col-lg-6"
               style={{ paddingLeft: "100px" }}
             >
-              <h2 className="section-subtitle">
+              <h3 className="section-subtitle">
                 Tailored Advice, Competitive Price
-              </h2>
+              </h3>
               <span className="section-paragraph">
                 <div style={{ marginBottom: "2vh" }}>
                   We are the most respected will writing and probate firms in
@@ -47,12 +47,10 @@ class AboutUs extends React.Component {
                   <li>
                     Save your family the heartache of not knowing your wishes.
                   </li>
+                  <li>Save tax and protect your assets from local taxes.</li>
                   <li>
-                    Save tax and shelter your assets from local authorities.
-                  </li>
-                  <li>
-                    Fixed fees, appointments in your home or at our office, at a
-                    time that suits you.
+                    Fixed fees, appointments in your home or over the telephone,
+                    at a time that suits you.
                   </li>
                 </ul>
               </span>

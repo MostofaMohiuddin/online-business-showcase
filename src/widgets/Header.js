@@ -8,6 +8,7 @@ import Services from "./Services";
 import FAQs from "./FAQs";
 import Consulting from "./Consulting";
 import Footer from "./Footer";
+import Pricing from "./Pricing";
 import neologo from "../images/Neo-Logo.png";
 
 class Header extends React.Component {
@@ -31,8 +32,8 @@ class Header extends React.Component {
           <div className="mynavbar-top">
             <div className="mynavbar-top-primary">
               <div className="mynavbar-top-primary-item">
-                <i aria-hidden="true" className={`point topbar icon`}></i> 20-22
-                Wenlock Road, London, England
+                <i aria-hidden="true" className={`point topbar icon`}></i> 28-42
+                Celements Road, Ilford, London, IG1 1BA
               </div>
               <div className="mynavbar-top-primary-item">
                 <i
@@ -41,13 +42,13 @@ class Header extends React.Component {
                 ></i>
                 +44 78 0438 8055
               </div>
-              <div className="mynavbar-top-primary-item">
+              {/* <div className="mynavbar-top-primary-item">
                 <i
                   aria-hidden="true"
                   className={`clock outline topbar icon`}
                 ></i>
                 9AM-11AM
-              </div>
+              </div> */}
             </div>
             <div className="mynavbar-top-button">
               <a
@@ -82,7 +83,7 @@ class Header extends React.Component {
                 <a href="#">Testimonials</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a href="#Pricing">Pricing</a>
               </li>
               <li>
                 <a href="#FAQs">FAQs</a>
@@ -123,9 +124,13 @@ class Header extends React.Component {
         <div id="Consulting" className="sectiongray">
           <Consulting />
         </div>
+        <div id="Pricing" className="sectiongray">
+          <Pricing />
+        </div>
         <div id="FAQs" className="section">
           <FAQs />
         </div>
+
         <Footer />
       </div>
     );

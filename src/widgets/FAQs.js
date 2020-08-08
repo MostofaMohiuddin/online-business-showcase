@@ -41,6 +41,10 @@ class FAQs extends React.Component {
                 <span className="section-paragraph">
                   Once executed, your Will is valid until it is replaced by a
                   New Will, revoked in writing or destroyed intentionally.
+                  Marriage will automatically revoke any previous will , unless
+                  it was expressly made in contemplation of that marriage. If
+                  you think this may have been your case,talk to us to receive
+                  specific advice
                 </span>
               </div>
 

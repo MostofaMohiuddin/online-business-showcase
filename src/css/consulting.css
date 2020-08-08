@@ -1,13 +1,28 @@
-.col-5-md.consulting-subsection {
-  padding-right: 1rem;
-  margin-right: 1.5rem;
+.col-md-5.consulting-subsection {
+  /* padding-right: 1rem;
+  margin-right: 1.5rem; */
   border-right-width: 1px;
   border-right-style: solid;
   border-color: rgba(0, 0, 0, 0.5);
 }
 
+button.appointment-btn {
+  float: right;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: #0074e1;
+  color: #fff;
+}
+button.appointment-btn:hover {
+  background-color: #fff;
+  color: #0074e1;
+}
 @media screen and (max-width: 768px) {
-  .col-5-md.consulting-subsection {
+  .col-md-5.consulting-subsection {
     border: none;
   }
 }
