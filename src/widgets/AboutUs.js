@@ -23,7 +23,7 @@ class AboutUs extends React.Component {
               data-aos-duration="5000"
               className="col-lg-6"
             >
-              <img src={sectionimage} className="img-fluid aboutus-image" />
+              <img src={sectionimage} className="img-fluid " alt="hero_1" />
               <div className="bgcircle"></div>
             </div>
             <div

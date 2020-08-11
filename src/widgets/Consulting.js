@@ -17,10 +17,18 @@ class Consulting extends React.Component {
         <div data-aos="fade-up" className="container">
           <div class="row">
             <div class="col-md-5 consulting-subsection">
-              <h2 className="section-subtitle">Free Consulting</h2>
-              <div className="section-emphasize">
-                Call us for an appointment at +44 78 0438 8055 or fill out the
-                form
+              <h2 className="section-subtitle-center">Free Consulting</h2>
+              <div className="section-emphasize section-paragraph-big-center">
+                Call us for an Appointment
+                <div>
+                  <span class="phone-button">
+                    <a href="tel:+447804388055">
+                      <i aria-hidden="true" className={`call icon  `}></i> +44
+                      78 0438 8055
+                    </a>
+                  </span>
+                </div>
+                or fill out the form
               </div>
             </div>
             <div class="col-md-7">
@@ -60,7 +68,7 @@ class Consulting extends React.Component {
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
-                    rows="5"
+                    rows="4"
                     placeholder="Your Message"
                   ></textarea>
                 </div>

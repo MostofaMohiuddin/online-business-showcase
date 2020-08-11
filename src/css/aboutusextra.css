@@ -1,0 +1,31 @@
+.carousel-control-prev {
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  /* padding-top: 100px;
+  margin-left: 300px; */
+  width: 7%;
+}
+.carousel-control-next {
+  top: 50%;
+  left: 50%;
+  transform: translate(55%, -50%);
+  /* padding-top: 100px;
+    margin-left: 300px; */
+  width: 7%;
+}
+
+.slide1-textstyle {
+  display: block;
+  font-size: 18px;
+  line-height: 2rem;
+  text-align: justify;
+  font-weight: 400;
+}
+.slide2-textstyle {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5rem;
+  text-align: justify;
+  font-weight: 400;
+}

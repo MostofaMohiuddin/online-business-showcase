@@ -9,9 +9,12 @@ import FAQs from "./FAQs";
 import Consulting from "./Consulting";
 import Footer from "./Footer";
 import Pricing from "./Pricing";
+import Testimonial from "./Testimonial";
 import neologo from "../images/Neo-Logo.png";
+import AboutUsExtra from "./AboutUsExtra";
+import AboutUsExtra2 from "./AboutUsExtra2";
 
-class Header extends React.Component {
+class LandingPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = { activeClass: "" };
@@ -42,17 +45,10 @@ class Header extends React.Component {
                 ></i>
                 +44 78 0438 8055
               </div>
-              {/* <div className="mynavbar-top-primary-item">
-                <i
-                  aria-hidden="true"
-                  className={`clock outline topbar icon`}
-                ></i>
-                9AM-11AM
-              </div> */}
             </div>
             <div className="mynavbar-top-button">
               <a
-                href="#Consulting"
+                href="#consulting"
                 class="button"
                 role="button"
                 aria-pressed="true"
@@ -63,27 +59,27 @@ class Header extends React.Component {
           </div>
           <div className={`mynavbar ${this.state.activeClass}`}>
             <input type="checkbox" id="check"></input>
-            <a href="#" className="logo">
-              <img src={neologo} className="img-fluid" />
+            <a href="#link-to-go" className="logo">
+              <img src={neologo} className="img-fluid" alt="neologo" />
             </a>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="#link-to-go">Home</a>
               </li>
               <li>
                 <a href="#aboutus">About Us</a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a href="#link-to-go">Features</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#link-to-go">Services</a>
               </li>
               <li>
-                <a href="#">Testimonials</a>
+                <a href="#link-to-go">Testimonials</a>
               </li>
               <li>
-                <a href="#Pricing">Pricing</a>
+                <a href="#pricing">Pricing</a>
               </li>
               <li>
                 <a href="#FAQs">FAQs</a>
@@ -105,7 +101,12 @@ class Header extends React.Component {
             <span className="header-primary-subtitle">
               The UK’s leading will writing and trusts formation experts.
             </span>
-            <a href="#" class="button" role="button" aria-pressed="true">
+            <a
+              href="#link-to-go"
+              class="button"
+              role="button"
+              aria-pressed="true"
+            >
               Get in Touch
             </a>
           </div>
@@ -118,13 +119,22 @@ class Header extends React.Component {
         <div id="aboutus" className="section">
           <AboutUs />
         </div>
-        <div id="Consulting" className="section">
+        <div id="aboutusextra" className="section">
+          <AboutUsExtra />
+        </div>
+        <div id="aboutusextra" className="section">
+          <AboutUsExtra2 />
+        </div>
+        <div id="services" className="section">
           <Services />
         </div>
-        <div id="Consulting" className="sectiongray">
+        <div id="consulting" className="sectiongray">
           <Consulting />
         </div>
-        <div id="Pricing" className="sectiongray">
+        <div id="testimonial" className="section">
+          <Testimonial />
+        </div>
+        <div id="pricing" className="sectiongray">
           <Pricing />
         </div>
         <div id="FAQs" className="section">
@@ -137,18 +147,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
-{
-  /* <div className="row">
-  <div className="col-sm-3">
-    <i aria-hidden="true" className={`point topbar icon`}></i>20-22 Wenlock
-    Road, London, England
-  </div>
-  <div className="col-sm-2">
-    <i aria-hidden="true" className={`mobile alternate topbar icon`}></i>
-    +44 78 0438 8055
-  </div>
-  <div className="col-3">a</div>
-  <div className="col-3">a</div>
-</div>; */
-}
+export default LandingPage;

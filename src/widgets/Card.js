@@ -28,7 +28,12 @@ class Pricing extends React.Component {
               </ul>
             </div>
             <div class="card-button">
-              <a href="#" class="button-gray" role="button" aria-pressed="true">
+              <a
+                href="#link-to-go"
+                class="button-gray"
+                role="button"
+                aria-pressed="true"
+              >
                 Buy Now
               </a>
             </div>

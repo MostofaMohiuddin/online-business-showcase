@@ -1,7 +1,7 @@
 .myfooter {
-  margin-top: 10vh;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  margin-top: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: rgb(34, 30, 30);
 
   color: aliceblue;
@@ -16,8 +16,13 @@
 ul li {
   list-style: none;
 }
-
-.col-2 ul li a {
+.col-lg-4 {
+  margin-bottom: 2rem;
+}
+.col-lg-2 {
+  margin-bottom: 2rem;
+}
+.col-lg-2 ul li a {
   text-decoration: none;
   font-size: 16px;
   line-height: 3vh;
@@ -25,7 +30,7 @@ ul li {
   transition: 0.5s;
 }
 
-.col-2 ul li a:hover {
+.col-lg-2 ul li a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -37,6 +42,14 @@ i.icon.large {
   display: block;
 }
 
+.col-lg-2 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.col-lg-2 a:hover {
+  color: rgba(255, 255, 255, 1);
+}
 .col-2 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);

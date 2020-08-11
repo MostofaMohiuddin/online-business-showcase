@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./Header";
-import AboutUs from "./AboutUs";
+
+import LandingPage from "./LandingPage";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <LandingPage />
       </div>
     );
   }

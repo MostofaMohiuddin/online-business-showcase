@@ -25,9 +25,15 @@ a.button-gray:hover {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
 }
 
+a.button-gray:active {
+  background-color: black;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5);
+}
+
 .card {
   transition: all 0.3s;
   margin-bottom: 2rem;
+
   /* max-width: 30rem; */
 }
 
@@ -58,4 +64,11 @@ a.button-gray:hover {
   font-style: strick;
   font-size: 15px;
   font-weight: 400;
+}
+
+.card-content {
+  font-size: 15px;
+  line-height: 1px;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
